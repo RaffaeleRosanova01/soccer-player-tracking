@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Model weights (distributed via GitHub Releases)
+weights/
+*.pt
+*.pth
+*.pth.tar
+
+# Data and generated outputs
+data/
+predictions/
+runs/
+*.mp4
+
+# Course-provided evaluator (not redistributed)
+evaluation/

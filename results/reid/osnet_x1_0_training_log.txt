@@ -1,0 +1,108 @@
+
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0209 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.7%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.5%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-25"
+
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0229 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.8%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.5%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-30"
+
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0205 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.7%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.0%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-35"
+
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0202 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.8%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.0%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-40"
+
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0226 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.6%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.5%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-45"
+
+=> Final test
+##### Evaluating soccernet_custom (source) #####
+Extracting features from query set ...
+Done, obtained 198-by-512 matrix
+Extracting features from gallery set ...
+Done, obtained 8947-by-512 matrix
+Speed: 0.0219 sec/batch
+Computing distance matrix with metric=euclidean ...
+Computing CMC and mAP ...
+** Results **
+mAP: 81.7%
+CMC curve
+Rank-1  : 96.5%
+Rank-5  : 98.0%
+Rank-10 : 99.0%
+Rank-20 : 99.0%
+Checkpoint saved to "/content/reid_model_finetuned/model/model.pth.tar-50"
+Elapsed 2:24:04
+[Error] Log file not found: /content/reid_model_finetuned/log.txt
+--- BACKING UP TO GOOGLE DRIVE ---
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+Model successfully saved to: /content/drive/MyDrive/Magistrale_AI/ARTIFICIAL_VISION/FinalProject_ArtificialVision/SoccerReID_Models/osnet_soccer_finetuned_ep50.pth

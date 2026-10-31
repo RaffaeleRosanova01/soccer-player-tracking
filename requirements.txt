@@ -1,0 +1,15 @@
+# Inference pipeline (run_pipeline.py). Tested with Python 3.12, torch 2.9 (CUDA 12.6).
+ultralytics==8.3.246
+# BoxMOT 16.0.7 is no longer on PyPI: install the tagged release from GitHub
+boxmot @ git+https://github.com/mikel-brostrom/boxmot.git@v16.0.7
+torch>=2.2
+numpy
+pandas
+scipy
+opencv-python
+tqdm
+
+# Training notebook only (run on Google Colab):
+#   SoccerNet                                             -> dataset download
+#   torchreid @ git+https://github.com/KaiyangZhou/deep-person-reid.git  -> OSNet fine-tuning
+#   trackeval @ git+https://github.com/JonathonLuiten/TrackEval.git      -> HOTA metric
