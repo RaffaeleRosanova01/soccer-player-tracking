@@ -1,5 +1,7 @@
 # Soccer Player Tracking & Behavior Analysis
 
+[![Open demo in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RaffaeleRosanova01/soccer-player-tracking/blob/main/notebooks/demo_colab.ipynb)
+
 Multi-object tracking of soccer players in broadcast footage, combining a fine-tuned **YOLO11l** detector, the **BoT-SORT** tracker with a fine-tuned **OSNet** Re-Identification model, and an offline trajectory post-processing stage.
 
 Developed as a group project for the *Artificial Vision* course (MSc in Computer Engineering, University of Salerno, A.Y. 2025-2026), as an entry to the Soccer Video Understanding contest organized by the MIVIA Lab. **The pipeline ranked 2nd out of ~30 teams (PTBS 1.8888, HOTA@0.5 0.904).**
@@ -63,7 +65,10 @@ The full methodology and the design choices are described in the [project report
 │   ├── post_processing.py           # offline trajectory cleaning (SoccerTrackCleaner)
 │   └── roi_utils.py                 # ROI geometry helpers
 ├── notebooks/
-│   └── soccer_tracking_pipeline.ipynb   # end-to-end Colab notebook: data prep, training, inference, visualization
+│   ├── soccer_tracking_pipeline.ipynb   # end-to-end Colab notebook: data prep, training, inference, visualization
+│   └── demo_colab.ipynb                 # one-click demo: final pipeline on an unseen clip → side-by-side video/GIF
+├── tools/
+│   └── make_comparison_video.py         # renders ground truth | predictions videos and GIFs
 ├── results/
 │   ├── detector/                    # YOLO training curves, PR/F1 curves, confusion matrix, sample predictions
 │   └── reid/                        # OSNet fine-tuning log
@@ -106,6 +111,14 @@ python run_pipeline.py --data-dir data/test --output-dir predictions --weights-d
 For each clip it writes `tracking_<id>_23.txt` (`frame,id,x,y,w,h`) and `behavior_<id>_23.txt` (`frame,roi_id,count`).
 
 The official contest evaluator was provided by the course staff and is not included. If you have it, place `simulator.py` and `evaluation_helper.py` in `evaluation/` and add `--evaluate`.
+
+### Quick demo
+
+The fastest way to try the pipeline is the [demo notebook](notebooks/demo_colab.ipynb) (*Open in Colab* badge above): it downloads the weights and one held-out SoccerNet clip, runs the full pipeline and renders a side-by-side video. To render your own predictions locally:
+
+```bash
+python tools/make_comparison_video.py --seq-dir data/test/<video_id> --pred-file predictions/tracking_<video_id>_23.txt --out comparison.mp4
+```
 
 ### Training
 
