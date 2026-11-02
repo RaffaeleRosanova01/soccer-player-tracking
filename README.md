@@ -9,7 +9,7 @@ Developed as a group project for the *Artificial Vision* course (MSc in Computer
 <p align="center">
   <img src="assets/demo.gif" width="800" alt="Ground truth vs. predicted tracks, with live player counts in the two ROIs">
 </p>
-<p align="center"><sub>Left: ground truth. Right: our predictions. Box colors show ROI membership, numbers are track IDs.<br>Qualitative example on a SoccerNet test clip, generated with an early version of the pipeline (before the ReID fine-tuning and post-processing stages).</sub></p>
+<p align="center"><sub>Left: ground truth. Right: our predictions. Box colors show ROI membership, numbers are track IDs.<br>Final pipeline on SoccerNet clip SNMOT-146, never used for training or validation. Reproduce it with the demo notebook.</sub></p>
 
 ## Results
 
@@ -114,7 +114,7 @@ The official contest evaluator was provided by the course staff and is not inclu
 
 ### Quick demo
 
-The fastest way to try the pipeline is the [demo notebook](notebooks/demo_colab.ipynb) (*Open in Colab* badge above): it downloads the weights and one held-out SoccerNet clip, runs the full pipeline and renders a side-by-side video. To render your own predictions locally:
+The fastest way to try the pipeline is the [demo notebook](notebooks/demo_colab.ipynb) (*Open in Colab* badge above): it downloads the weights and one held-out SoccerNet clip, runs the full pipeline and renders a side-by-side video. It runs end to end on a free Colab T4 GPU in about 10-15 minutes, most of which is the dataset download. To render your own predictions locally:
 
 ```bash
 python tools/make_comparison_video.py --seq-dir data/test/<video_id> --pred-file predictions/tracking_<video_id>_23.txt --out comparison.mp4
