@@ -7,7 +7,7 @@ Multi-object tracking of soccer players in broadcast footage, combining a fine-t
 Developed as a group project for the *Artificial Vision* course (MSc in Computer Engineering, University of Salerno, A.Y. 2025-2026), as an entry to the Soccer Video Understanding contest organized by the MIVIA Lab. **The pipeline ranked 2nd out of ~30 teams (PTBS 1.8888, HOTA@0.5 0.904).**
 
 <p align="center">
-  <img src="assets/demo.gif" width="800" alt="Ground truth vs. predicted tracks, with live player counts in the two ROIs">
+  <img src="assets/demo_final_snmot146.gif" width="800" alt="Ground truth vs. predicted tracks, with live player counts in the two ROIs">
 </p>
 <p align="center"><sub>Left: ground truth. Right: our predictions. Box colors show ROI membership, numbers are track IDs.<br>Final pipeline on SoccerNet clip SNMOT-146, never used for training or validation. Reproduce it with the demo notebook.</sub></p>
 
