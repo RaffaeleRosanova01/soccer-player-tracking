@@ -130,7 +130,10 @@ Python · PyTorch · Ultralytics YOLO11 · BoxMOT (BoT-SORT) · Torchreid (OSNet
 
 ## Authors
 
-Group project (Group 23). Repository maintained by **Raffaele Rosanova**.
+Group project (Group 23):
+
+- **Raffaele Rosanova** ([@RaffaeleRosanova01](https://github.com/RaffaeleRosanova01)) — repository maintainer
+- **Matteo La Manna** ([@matteolmn3](https://github.com/matteolmn3))
 
 ## Acknowledgements
 
